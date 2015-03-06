@@ -738,17 +738,6 @@
     height: 34px;
 }
 
-.gh-batch-edit-events-container .gh-event-type::before {
-    border-radius: 12px;
-    content: attr(data-first);
-    display: inline-block;
-    height: 20px;
-    margin-right: 6px;
-    padding: 1px;
-    text-align: center;
-    width: 20px;
-}
-
 .gh-batch-edit-events-container .gh-event-type.gh-editing::before {
     display: none;
 }

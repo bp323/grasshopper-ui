@@ -17,6 +17,22 @@
     outline: -webkit-focus-ring-color auto 5px;
 }
 
+
+/*********/
+/* ICONS */
+/*********/
+
+.gh-event-type::before {
+    border-radius: 12px;
+    content: attr(data-first);
+    display: inline-block;
+    height: 20px;
+    margin-right: 6px;
+    padding: 1px;
+    text-align: center;
+    width: 20px;
+}
+
 /**********/
 /* HEADER */
 /**********/
