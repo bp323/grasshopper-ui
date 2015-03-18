@@ -10,7 +10,7 @@
 
 EXPECTED_REPOSITORY="CUL-DigitalServices/grasshoppper-ui"
 EXPECTED_BRANCH="master"
-EXPECTED_PULL_REQUEST=true
+EXPECTED_PULL_REQUEST=288
 
 function package_and_upload {
     bin/package -su --upload-bucket=grasshopper-ui-releases --upload-region=eu-west-1
