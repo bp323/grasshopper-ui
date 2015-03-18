@@ -6,6 +6,11 @@ branches:
   only:
     - master
 
+env:
+  global:
+    - secure: "ECY8od4oUD+YJai7Nt7CyQ+S5UTxdmtb2L3gPLyKU1+OK5ylOvhvu3WRpBRwVwP1QjVW3ykuwurE7rN9r6zxWSFxfYgw2WVHJF5X4NYimfiSANj5HrgEwr9BJEAKauIE26T/EZWU700bYQXsZPTjevJVgX4zpINN8Ksr9rYeKh4="
+    - secure: "TTh+HudIUGZACFGqQLZGGU1Qa/K4D2dMBa+eSC+bpA+wOY/rtr/arQJu8Gjjt5tnevSTZRyXVqHXLRB7gmXL1OO91m9W6c/cNMMf0telyddOpdSPk4aGjHWaSEKEqhYpu2Bf6N3h8ssRjIapDzioUvkv582xbqhDDav+RD6v1Zc="
+
 addons:
   postgresql: "9.3"
 
