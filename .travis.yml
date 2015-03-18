@@ -7,6 +7,10 @@ branches:
     - master
 
 addons:
+  artifacts:
+    debug: true
+    paths:
+      - ~/build/CUL-DigitalServices/grasshopper-ui/target
   postgresql: "9.3"
 
 before_install:
@@ -105,8 +109,6 @@ script:
 after_success:
   # Run a release build
   - grunt
-  # Package and upload to Amazon S3
-  - ./etc/scripts/travis-upload.sh
 
 after_script:
   - grunt coveralls
