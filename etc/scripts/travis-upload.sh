@@ -8,9 +8,9 @@
 #   * The build was not performed on a pull request to the master branch
 ##
 
-EXPECTED_REPOSITORY="CUL-DigitalServices/grasshoppper-ui"
+EXPECTED_REPOSITORY="CUL-DigitalServices/grasshopper-ui"
 EXPECTED_BRANCH="master"
-EXPECTED_PULL_REQUEST=288
+EXPECTED_PULL_REQUEST=true
 
 function package_and_upload {
     echo 'PACKAGE AND UPLOAD 2'
@@ -25,7 +25,7 @@ echo '$EXPECTED_BRANCH:' $EXPECTED_BRANCH
 echo '$TRAVIS_PULL_REQUEST:' $TRAVIS_PULL_REQUEST
 echo '$EXPECTED_PULL_REQUEST:' $EXPECTED_PULL_REQUEST
 
-if [[ "$TRAVIS_REPO_SLUG" == "$EXPECTED_REPOSITORY" && "$TRAVIS_BRANCH" == "$EXPECTED_BRANCH" && "$TRAVIS_PULL_REQUEST" == "$EXPECTED_PULL_REQUEST" ]]; then
+if [[ "$EXPECTED_REPOSITORY" == "$EXPECTED_REPOSITORY" && "$EXPECTED_BRANCH" == "$EXPECTED_BRANCH" && "$EXPECTED_PULL_REQUEST" == "$EXPECTED_PULL_REQUEST" ]]; then
     echo 'PACKAGE AND UPLOAD'
     package_and_upload
 fi
