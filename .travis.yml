@@ -8,14 +8,14 @@ branches:
 
 addons:
   artifacts:
-    debug: true
-    paths:
-      - ~/build/CUL-DigitalServices/grasshopper-ui/target
+    bucket: my-special-bucket
+    key:
+      secure: SyaIXy6OKDaYiew+...5vgAldy3jkmKA=
+    secret:
+      secure: X19eaiiFZobD3uCk...X8cY+ohT8WkQ0=
   postgresql: "9.3"
 
 before_install:
-  - "gem install travis-artifacts"
-
   # Create virtual hosts
   # - sudo sed -i "2i127.0.0.2  2013.timetable.cam.ac.uk" /etc/hosts
   # - sudo sed -i "2i127.0.0.2  2014.timetable.cam.ac.uk" /etc/hosts
