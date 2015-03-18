@@ -13,7 +13,9 @@ EXPECTED_BRANCH="master"
 EXPECTED_PULL_REQUEST=288
 
 function package_and_upload {
-    bin/package -su --upload-bucket=grasshopper-ui-releases --upload-region=eu-west-1
+    echo 'PACKAGE AND UPLOAD 2'
+    rm -rf ./target
+    ./bin/package -su --upload-bucket=grasshopper-ui-releases --upload-region=eu-west-1
 }
 
 echo '$TRAVIS_REPO_SLUG:' $TRAVIS_REPO_SLUG
@@ -24,5 +26,6 @@ echo '$TRAVIS_PULL_REQUEST:' $TRAVIS_PULL_REQUEST
 echo '$EXPECTED_PULL_REQUEST:' $EXPECTED_PULL_REQUEST
 
 if [[ "$TRAVIS_REPO_SLUG" == "$EXPECTED_REPOSITORY" && "$TRAVIS_BRANCH" == "$EXPECTED_BRANCH" && "$TRAVIS_PULL_REQUEST" == "$EXPECTED_PULL_REQUEST" ]]; then
+    echo 'PACKAGE AND UPLOAD'
     package_and_upload
 fi

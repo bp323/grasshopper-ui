@@ -6,6 +6,7 @@ var util = require('util');
 var CoreUtil = require('timetable-release-tools').CoreUtil;
 var PackageUtil = require('timetable-release-tools').PackageUtil;
 
+console.log('PACKAGE AND UPLOAD 3')
 
 //////////////////////
 // HANDLE ARGUMENTS //
